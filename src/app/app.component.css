@@ -1,0 +1,11 @@
+
+.banner {
+    overflow:hidden;
+}
+
+.bannerImg {
+    width:100%; 
+    overflow: hidden;
+    margin-top: -35%;
+    margin-bottom: -10%;
+}

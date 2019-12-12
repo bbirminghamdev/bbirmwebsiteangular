@@ -1,9 +1,7 @@
-export interface ITaxBracket {
+export interface ITaxCredit {
 
     id: number;
-    startAmount: number;
-    endAmount: number;
-    percentage: number;
-    gov_type: string;
+    name: number;
+    maxClaim: number;
     year: number;
 }

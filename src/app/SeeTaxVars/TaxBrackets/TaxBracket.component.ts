@@ -1,6 +1,7 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { ITaxBracket } from './TaxBracket';
 import { TaxBracketService } from '../../shared/TaxBracket.service';
+import { BaseTaxGridItem } from '../BaseTaxGridItem.component';
 
 @Component({
     selector: 'bb-TaxBrackets',
@@ -9,8 +10,8 @@ import { TaxBracketService } from '../../shared/TaxBracket.service';
   
   })
 
-export class TaxBracketComponent 
-    implements OnInit, OnChanges {
+export class TaxBracketComponent extends BaseTaxGridItem
+    implements OnInit {
 
   pageTitle: string = "Tax Brackets";
   errorMessage: string;
@@ -39,12 +40,8 @@ export class TaxBracketComponent
     
   }
 
-  ngOnChanges(changes: import("@angular/core").SimpleChanges): void {
-    console.log('In OnChanges');
-  }
-
   constructor( private taxBracketService : TaxBracketService) {
-    
+    super()
   }
 
   performFilter(yearFilter: number): ITaxBracket[] {

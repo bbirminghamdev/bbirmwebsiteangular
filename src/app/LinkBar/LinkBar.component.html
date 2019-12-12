@@ -1,7 +1,11 @@
 <div style="text-align:right; background-color: cornflowerblue;">
 
-    <button (click)="CalculateTaxes()" >Calc Tax</button>
-    <button (click)="DoSomething()" >Do Something Else</button>
-    <button (click)="ViewBlog()" >Blog</button>
-    <button (click)="About()" >About</button>
+    <button class="btn btn-outline-primary" [routerLink]="['/CalcTax']" >Calc Tax</button>
+    <button class="btn btn-outline-primary" [routerLink]="['/TaxGrid']" >Tax Grids</button>
+    <button class="btn btn-outline-primary" [routerLink]="['/Blog']" >Blog</button>
+    <button class="btn btn-outline-primary" [routerLink]="['/About']">About</button> 
+    
+</div>
+<div class="mainView">
+    <router-outlet></router-outlet>
 </div>

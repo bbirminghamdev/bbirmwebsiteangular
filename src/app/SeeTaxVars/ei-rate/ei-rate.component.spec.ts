@@ -12,7 +12,7 @@ describe('EiRateComponent', () => {
     })
     .compileComponents();
   }));
-
+ 
   beforeEach(() => {
     fixture = TestBed.createComponent(EiRateComponent);
     component = fixture.componentInstance;

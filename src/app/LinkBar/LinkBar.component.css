@@ -1,0 +1,24 @@
+.mainView {
+    position: relative;
+    vertical-align: middle;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    border: transparent;
+    font-weight: bolder;
+    color: white;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}

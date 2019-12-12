@@ -1,1 +1,20 @@
-<p>cpp-rate works!</p>
+<div><h3>{{pageTitle}}</h3></div>
+<div><p>Filter Year: <input type='number' [(ngModel)]='yearFilter'></p></div>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <th>Exemption</th>
+            <th>Rate</th>
+            <th>Max Per Year</th>
+            <th>Year</th>
+        </thead>
+        <tbody>
+            <tr *ngFor='let cppRate of filteredCPPRates'>
+                <td>{{cppRate.exemption}}</td>
+                <td>{{cppRate.rate}}</td>
+                <td>{{cppRate.maxPerYear}}</td>
+                <td>{{cppRate.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,8 +1,10 @@
+import { throwError } from 'rxjs';
+import { HttpErrorResponse } from '@angular/common/http';
 
 
 export class ErrorHandler {
 
-    private handleError(err: HttpErrorResponse) {
+    public handleError(err: HttpErrorResponse) {
 
         let errorMessage = '';
 

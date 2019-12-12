@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tax-grid',
+  selector: 'bb-tax-grid',
   templateUrl: './tax-grid.component.html',
   styleUrls: ['./tax-grid.component.css']
 })

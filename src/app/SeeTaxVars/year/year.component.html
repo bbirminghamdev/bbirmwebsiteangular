@@ -1,1 +1,13 @@
-<p>year works!</p>
+<div><h3>{{pageTitle}}</h3></div>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor='let year of filteredYears'>
+                <td>{{year.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

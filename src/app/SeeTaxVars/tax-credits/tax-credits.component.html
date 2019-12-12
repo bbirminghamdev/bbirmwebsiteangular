@@ -1,1 +1,18 @@
-<p>tax-credits works!</p>
+<div><h3>{{pageTitle}}</h3></div>
+<div><p>Filter Year: <input type='number' [(ngModel)]='yearFilter'></p></div>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <th>Name</th>
+            <th>Max Claim</th>
+            <th>Year</th>
+        </thead>
+        <tbody>
+            <tr *ngFor='let taxCredit of filteredTaxCredits'>
+                <td>{{taxCredit.name}}</td>
+                <td>{{taxCredit.maxClaim}}</td>
+                <td>{{taxCredit.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

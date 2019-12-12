@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'bb-LinkBar',
-  templateUrl: './LinkBar.component.html'
+  templateUrl: './LinkBar.component.html',
+  styleUrls: ['./LinkBar.component.css']
 
 })
 export class LinkBarComponent {
@@ -11,6 +12,10 @@ export class LinkBarComponent {
   CalculateTaxes() 
   {
     window.alert('They wanna calc their taxes!');
+  }
+  SeeTaxVars() 
+  {
+    window.alert('They wanna see the tax vars!');
   }
   DoSomething() 
   {
