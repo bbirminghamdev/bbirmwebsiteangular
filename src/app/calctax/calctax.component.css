@@ -1,0 +1,19 @@
+.grid-container {
+    display:grid;
+    grid-template-columns: 10% 20% auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: minmax(150px, 1fr) minmax(200px, 2fr) 8fr;
+  }
+  @media (max-width: 600px){
+    .wrapper{
+      grid-template-columns: 1fr;
+    }
+  }
+
+.field {
+    width: 100%;
+}

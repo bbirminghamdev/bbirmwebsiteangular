@@ -1,0 +1,22 @@
+<div><h3>{{pageTitle}}</h3></div>
+<div><p>Filter Year: <input type='number' [(ngModel)]='yearFilter'></p></div>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <th>Start Amt</th>
+            <th>End Amt</th>
+            <th>Perc</th>
+            <th>Gov Type</th>
+            <th>Year</th>
+        </thead>
+        <tbody>
+            <tr *ngFor='let taxBracket of filteredTaxBrackets'>
+                <td>{{taxBracket.startAmount}}</td>
+                <td>{{taxBracket.endAmount}}</td>
+                <td>{{taxBracket.percentage | percent}}</td>
+                <td>{{taxBracket.gov_type}}</td>
+                <td>{{taxBracket.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
