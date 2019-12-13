@@ -4,14 +4,14 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap} from 'rxjs/operators'
 import { ErrorHandler } from './ErrorHandler';
-
+import { Constants } from './constants';
 
 @Injectable( {
     providedIn: 'root'
 })
 export class EIRateService extends ErrorHandler {
 
-    private eiRateUrl = 'http://127.0.0.1:8000/ei_rates?format=json'
+    private eiRateUrl = Constants.HOME_URL + 'ei_rates?format=json'
 
     constructor(private http: HttpClient) {
         super();

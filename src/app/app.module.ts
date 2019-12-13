@@ -16,6 +16,7 @@ import { EiRateComponent } from './seetaxvars/ei-rate/ei-rate.component';
 import { BlogComponent } from './blog/blog.component';
 import { CalctaxComponent } from './calctax/calctax.component';
 import { FooterComponent } from './footer/footer.component';
+import { LinkHoverButtonComponent } from './shared/linkhoverbutton/linkHoverButton.component';
 
 @NgModule({
   imports: [
@@ -26,9 +27,9 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'TaxGrid', component:TaxGridComponent },
       { path: 'About', component:AboutComponent },
       { path: 'Blog', component:BlogComponent },
-      { path: 'CalcTax', component:CalctaxComponent }
-      // { path: '', redirectTo: 'About', pathMatch: 'full' },
-      // { path: '**', component:AboutComponent, pathMatch: 'full' }
+      { path: 'CalcTax', component:CalctaxComponent },
+      { path: '', redirectTo: 'About', pathMatch: 'full' },
+      { path: '**', component:AboutComponent, pathMatch: 'full' }
     ])
   ],
   declarations: [
@@ -43,7 +44,8 @@ import { FooterComponent } from './footer/footer.component';
     EiRateComponent,
     BlogComponent,
     CalctaxComponent,
-    FooterComponent
+    FooterComponent,
+    LinkHoverButtonComponent
   ],
   
   providers: [],

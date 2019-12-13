@@ -4,14 +4,14 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap} from 'rxjs/operators'
 import { ErrorHandler } from './ErrorHandler';
-
+import { Constants } from './constants';
 
 @Injectable( {
     providedIn: 'root'
 })
 export class CPPRateService extends ErrorHandler {
 
-    private cpprateUrl = 'http://127.0.0.1:8000/cpp_rates?format=json'
+    private cpprateUrl = Constants.HOME_URL + 'cpp_rates?format=json'
 
     constructor(private http: HttpClient) {
         super();

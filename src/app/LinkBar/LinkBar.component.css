@@ -1,9 +1,6 @@
-.mainView {
-    position: relative;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
+.links {
+    text-align:right; 
+    background-color: #0076FF;
 }
 
 button {

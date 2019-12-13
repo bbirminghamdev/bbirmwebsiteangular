@@ -1,0 +1,5 @@
+<div class="icon-line" (mouseover)="hover=true" (mouseleave)="hover=false">
+    <a [href]="url" target="_blank" rel="noopener noreferrer"
+        ><span [ngStyle]="{color: hover==true ? mouseOverColor : mouseLeaveColor }" class="fa fa-{{icon}}"></span>
+    </a>
+</div>
