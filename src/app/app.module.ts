@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { LinkBarComponent } from './LinkBar/LinkBar.component';
@@ -17,17 +17,21 @@ import { BlogComponent } from './blog/blog.component';
 import { CalctaxComponent } from './calctax/calctax.component';
 import { FooterComponent } from './footer/footer.component';
 import { LinkHoverButtonComponent } from './shared/linkhoverbutton/linkHoverButton.component';
+import { YearSelectComponent } from './shared/year-select/year-select.component';
+import { TwitterSentimentComponent } from './twitter-sentiment/twitter-sentiment.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,  
     RouterModule.forRoot([
       { path: 'TaxGrid', component:TaxGridComponent },
       { path: 'About', component:AboutComponent },
       { path: 'Blog', component:BlogComponent },
       { path: 'CalcTax', component:CalctaxComponent },
+      { path: 'TwitterSentiments', component:TwitterSentimentComponent },
       { path: '', redirectTo: 'About', pathMatch: 'full' },
       { path: '**', component:AboutComponent, pathMatch: 'full' }
     ])
@@ -45,7 +49,9 @@ import { LinkHoverButtonComponent } from './shared/linkhoverbutton/linkHoverButt
     BlogComponent,
     CalctaxComponent,
     FooterComponent,
-    LinkHoverButtonComponent
+    LinkHoverButtonComponent,
+    YearSelectComponent,
+    TwitterSentimentComponent
   ],
   
   providers: [],

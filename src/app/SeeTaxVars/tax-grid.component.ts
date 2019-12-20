@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaxGridComponent implements OnInit {
 
+  pageTitle:string = "Database Contents"
+
+  selectedYear:number = 1;
+
+  selectedYearChangedEventHandler(selectedYear) {  
+    this.selectedYear = selectedYear;
+  }
+
   constructor() { }
 
   ngOnInit() {

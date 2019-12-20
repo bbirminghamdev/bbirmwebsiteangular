@@ -11,7 +11,7 @@
             <tr *ngFor='let taxCredit of filteredTaxCredits'>
                 <td>{{taxCredit.name}}</td>
                 <td>{{taxCredit.maxClaim}}</td>
-                <td>{{taxCredit.year}}</td>
+                <td><bb-year-select yearId={{taxCredit.year}} disabled=true></bb-year-select></td>
             </tr>
         </tbody>
     </table>

@@ -1,15 +1,28 @@
 .links {
-    text-align:right; 
+    display: inline-block;
+    width:100%;
     background-color: #0076FF;
 }
 
-button {
+.top-button {
     background-color: transparent;
     border-color: transparent;
     border: transparent;
     font-weight: bolder;
     color: white;
+    float:right;
 }
+
+.popup-dropdown {
+    color:white;
+    background-color: #577FBA;
+}
+
+.popup-button {
+    color: black;
+    font-weight: bolder;
+}
+
 
 ul 
 {

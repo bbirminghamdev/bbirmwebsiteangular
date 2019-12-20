@@ -1,9 +1,24 @@
-<div class="links">
-
-    <button class="btn btn-outline-primary" [routerLink]="['/CalcTax']" >Calc Tax</button>
-    <button class="btn btn-outline-primary" [routerLink]="['/TaxGrid']" >Tax Grids</button>
-    <button class="btn btn-outline-primary" [routerLink]="['/Blog']" >Blog</button>
-    <button class="btn btn-outline-primary" [routerLink]="['/About']">About</button> 
+<div class="btn-group links">
+    <button class="btn btn-primary top-button" [routerLink]="['/About']">About</button> 
+    <button class="btn btn-primary top-button" [routerLink]="['/Blog']" >Blog</button>
+    <div>
+        <button class="btn btn-primary dropdown-toggle top-button" id="MLStuff" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Machine Learning</button>
+        <div class="dropdown-menu popup-dropdown" aria-labelledby="MLStuff">
+            <button class="dropdown-item popup-button" [routerLink]="['/TwitterSentiments']" >Twitter Sentiment Analyzer</button>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-primary dropdown-toggle top-button" id="Basic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Basic Toys</button>
+        <div class="dropdown-menu popup-dropdown" aria-labelledby="Basic">
+            <!-- <button class="dropdown-item popup-button" [routerLink]="['/CalcTax']">Tax Calculator</button> -->
+            <button class="dropdown-item popup-button" [routerLink]="['/TaxGrid']">Database Contents Test</button>
+        </div>
+    </div>
+    
+    <!--<button class="btn btn-outline-primary top-button" [routerLink]="['/CalcTax']" >Calc Tax</button>
+    <button class="btn btn-outline-primary top-button" [routerLink]="['/TaxGrid']" >Tax Grids</button>-->
+    
+    
     
 </div>
 <div id="content-single-column">

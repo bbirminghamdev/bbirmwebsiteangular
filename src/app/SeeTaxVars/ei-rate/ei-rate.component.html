@@ -11,7 +11,7 @@
             <tr *ngFor='let eiRate of filteredEIRates'>
                 <td>{{eiRate.rate}}</td>
                 <td>{{eiRate.maxPerYear}}</td>
-                <td>{{taxBracket.year}}</td>
+                <td><bb-year-select yearId={{eiRate.year}} disabled=true></bb-year-select></td>
             </tr>
         </tbody>
     </table>

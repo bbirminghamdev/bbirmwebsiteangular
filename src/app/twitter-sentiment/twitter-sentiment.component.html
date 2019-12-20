@@ -1,0 +1,12 @@
+<div><h3>{{pageTitle}}</h3>
+    <p>This page hosts a Twitter Sentiment analyzer. It was generated using the nltk python library and exported via pickle, then restored on demand here. The training dataset can be found <a href="https://www.kaggle.com/kazanova/sentiment140/data" target="_blank" rel="noopener noreferrer">here</a>. 100,000 random records were selected for training. A random selection of 100 tweets are then pulled from the Twitter API and run through the model. 
+        <br /><br /> 
+        In a future iteration of this page, I will post the selected tweets and their sentiment.
+    </p> </div>
+<div><p>Search term: <input type='text' [(ngModel)]='searchTerm'></p></div>
+<div><p><button class="btn btn-primary" (click)="search(searchTerm)">Search</button></p></div>
+<div *ngIf="loading"><p>Analyzing...</p></div>
+<div *ngIf="searchComplete">
+    <p>Overall Sentiment: {{twitter_sentiment.overall_sentiment}}</p>
+    <p>Sentiment Percentage: {{twitter_sentiment.sentiment_percentage}}</p>
+</div>

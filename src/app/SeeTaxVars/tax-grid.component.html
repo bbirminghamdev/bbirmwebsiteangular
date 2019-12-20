@@ -1,4 +1,88 @@
+
+
 <div>
+  <!-- <bb-year-select yearId=1 (selectedYearEmitter)="selectedYearChangedEventHandler($event)"> ></bb-year-select>
+  <label>{{selectedYear}}</label> -->
+
+    <div><h3>{{pageTitle}}</h3>
+    <p>I am using this page to learn better how to use the Angular toolset. While it is (understandably) incomplete, here you can get a brief look at some of the things I have learned about using Angular.
+      This page communicates with a Python Django Rest back-end to supply its dataset.
+    </p> </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Years
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <bb-year></bb-year>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Tax brackets
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <bb-TaxBrackets></bb-TaxBrackets>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tax Credits
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <bb-tax-credits></bb-tax-credits>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  EI Rate
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <bb-ei-rate></bb-ei-rate>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  CPP Rate
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <bb-cpp-rate></bb-cpp-rate>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--
     <bb-year></bb-year>
     <br /><hr /><br />
     <bb-TaxBrackets></bb-TaxBrackets>
@@ -7,5 +91,5 @@
     <br /><hr /><br />
     <bb-ei-rate></bb-ei-rate>
     <br /><hr /><br />
-    <bb-cpp-rate></bb-cpp-rate>
+    <bb-cpp-rate></bb-cpp-rate>-->
 </div>

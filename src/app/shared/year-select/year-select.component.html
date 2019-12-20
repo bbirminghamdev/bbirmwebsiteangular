@@ -1,0 +1,11 @@
+<div *ngIf="loaded">
+<form [formGroup]="yearForm">
+<div class="input-group mb-3">
+    <select class="custom-select" id="yearSelect" formControlName="yearSelect" >
+
+        <option *ngFor="let year of years" [value]="year.id">{{year.name}}</option>
+
+    </select>
+  </div>
+</form>
+</div>

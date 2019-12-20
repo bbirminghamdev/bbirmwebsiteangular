@@ -15,7 +15,7 @@
                 <td>{{taxBracket.endAmount}}</td>
                 <td>{{taxBracket.percentage | percent}}</td>
                 <td>{{taxBracket.gov_type}}</td>
-                <td>{{taxBracket.year}}</td>
+                <td><bb-year-select yearId={{taxBracket.year}} disabled=false></bb-year-select></td>
             </tr>
         </tbody>
     </table>

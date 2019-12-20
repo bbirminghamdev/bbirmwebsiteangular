@@ -1,4 +1,19 @@
 
+.accordion {
+    border-style: hidden;
+}
+
+.card {
+    border-style: hidden;
+}
+
+.card-header {
+    background-color: #00359E;
+}
+ 
+.card-body {
+    background-color: #00288D;
+}
 
 thead {
     color: cornflowerblue;
